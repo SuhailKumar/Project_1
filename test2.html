@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>SK Animation</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        transition-duration: .8s!important;
+    }
+
+    section {
+        background: #000000d6;
+    }
+
+    .we {
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: #e02b26;
+    }
+
+
+
+    .us-1 {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 20px;
+    }
+
+    .us-1 #upper_left {
+        flex: 50%;
+    }
+
+    .us-1 #upper_left img {
+        position: absolute;
+        left: 25%;
+    }
+
+    .us-1 #upper_right {
+        flex: 50%;
+        text-align: right;
+    }
+
+    .us-1 #upper_right img {
+        position: absolute;
+        right: 20%; 
+    }
+
+    .us-2 {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 56vh;
+    }
+
+    .us-2 #lower_left {
+        flex: 50%;
+    }
+
+    .us-2 #lower_left img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+    }
+
+    .us-2 #lower_right {
+        flex: 50%;
+        text-align: right;
+    }
+
+    .us-2 #lower_right img {
+        position: relative;
+        top: 50%;
+        right: 41%;
+    }
+
+    .last {
+        height: 100px;
+        width: auto;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .last h4 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: #e02b26;
+    }
+
+    .box3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box3 img {
+        height: 500px;
+    }
+
+
+</style>
+</head>
+<body>
+
+    <div class="we">
+        <h1>Reveal page on scrolling</h1>
+    </div>
+
+    <section>
+        <div class="us-1">
+            <div id="upper_left">
+                <img src="samp-1.png" data-aos="fade-down-right">
+            </div>
+            <div id="upper_right" >
+                <img src="samp-3.png" data-aos="fade-down-left">
+            </div>
+        </div>
+
+        <div class="us-2">    
+            <div id="lower_left">
+                <img src="samp-2.png" data-aos="fade-up-right">
+            </div>
+            <div id="lower_right">
+                <img src="samp-4.png" data-aos="fade-up-left">
+            </div>
+        </div>
+
+        <div class="last">
+            <h4 data-aos="fade-up">Suhail Kumar</h4>
+        </div>
+    </section>
+
+    <div class="box3">
+        <img src="waving-gif.gif" data-aos="fade-up">
+    </div>
+
+    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
+
+
