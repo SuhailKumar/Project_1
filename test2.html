@@ -26,9 +26,8 @@
 
     .us-1 {
         display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        top: 20px;
+        flex-direction: row;
+        height: 300px;
     }
 
     .us-1 #upper_left {
@@ -36,8 +35,9 @@
     }
 
     .us-1 #upper_left img {
-        position: absolute;
-        left: 25%;
+        position: relative;
+        bottom: -50%;
+        left: 50%;
     }
 
     .us-1 #upper_right {
@@ -46,14 +46,15 @@
     }
 
     .us-1 #upper_right img {
-        position: absolute;
-        right: 20%; 
+        position: relative;
+        bottom: -50%; 
+        right: 50%;
     }
 
     .us-2 {
         display: flex;
-        flex-wrap: wrap;
-        min-height: 56vh;
+        flex-direction: row;
+        height: 300px;
     }
 
     .us-2 #lower_left {
@@ -62,7 +63,6 @@
 
     .us-2 #lower_left img {
         position: relative;
-        top: 50%;
         left: 50%;
     }
 
@@ -73,15 +73,13 @@
 
     .us-2 #lower_right img {
         position: relative;
-        top: 50%;
-        right: 41%;
+        right: 50%;
     }
 
     .last {
         height: 100px;
         width: auto;
         text-align: center;
-        padding: 40px;
     }
 
     .last h4 {
@@ -112,19 +110,19 @@
     <section>
         <div class="us-1">
             <div id="upper_left">
-                <img src="samp-1.png" data-aos="fade-down-right">
+                <img src="Image/samp-1.png" data-aos="fade-down-right">
             </div>
             <div id="upper_right" >
-                <img src="samp-3.png" data-aos="fade-down-left">
+                <img src="Image/samp-3.png" data-aos="fade-down-left">
             </div>
         </div>
 
         <div class="us-2">    
             <div id="lower_left">
-                <img src="samp-2.png" data-aos="fade-up-right">
+                <img src="Image/samp-2.png" data-aos="fade-up-right">
             </div>
             <div id="lower_right">
-                <img src="samp-4.png" data-aos="fade-up-left">
+                <img src="Image/samp-4.png" data-aos="fade-up-left">
             </div>
         </div>
 
@@ -134,7 +132,7 @@
     </section>
 
     <div class="box3">
-        <img src="waving-gif.gif" data-aos="fade-up">
+        <img src="Image/waving-gif.gif" data-aos="fade-up">
     </div>
 
     
